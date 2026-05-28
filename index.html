@@ -6,40 +6,88 @@
     <title>Aqib Shaik Portfolio</title>
 
     <style>
-        body{
+        body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            margin:0;
-            background:#f4f4f4;
+            background: #eef2f7;
+            color: #222;
         }
 
-        header{
-            background:#0a192f;
-            color:white;
-            text-align:center;
-            padding:40px;
+        header {
+            background: linear-gradient(135deg, #0a192f, #1e3a8a);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
         }
 
-        section{
-            background:white;
-            margin:20px;
-            padding:20px;
-            border-radius:10px;
-            box-shadow:0 2px 8px rgba(0,0,0,0.1);
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
         }
 
-        h2{
-            color:#0a192f;
+        header p {
+            font-size: 18px;
+            margin: 6px 0;
         }
 
-        ul{
-            line-height:1.8;
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
         }
 
-        footer{
-            background:#0a192f;
-            color:white;
-            text-align:center;
-            padding:15px;
+        section {
+            background: white;
+            margin: 25px 0;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #0a192f;
+            border-bottom: 3px solid #1e3a8a;
+            padding-bottom: 8px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: #f8fafc;
+            padding: 18px;
+            border-radius: 12px;
+            border-left: 5px solid #1e3a8a;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #1e3a8a;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #dbeafe;
+            color: #0a192f;
+            padding: 8px 12px;
+            margin: 6px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        footer {
+            background: #0a192f;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -48,93 +96,127 @@
 
 <header>
     <h1>Aqib Shaik</h1>
-    <h2>MS Computer Science Student</h2>
+    <p>MS Computer Science Student</p>
     <p>University of New Haven</p>
-    <p>Aspiring Software Developer | Cybersecurity Enthusiast| Networking | full stack development |</p>
+    <p>Aspiring Software Developer | Cybersecurity Enthusiast | Networking | Full Stack Development</p>
 </header>
+
+<div class="container">
 
 <section>
     <h2>About Me</h2>
-
     <p>
-        I am currently pursuing a Master's degree in Computer Science at the
-        University of New Haven. I am passionate about cybersecurity,
-        networking, digital forensics, and software technologies.
-        I am actively seeking internship opportunities to enhance my
-        technical and professional experience.
+        I am currently pursuing a Master's degree in Computer Science at the University of New Haven.
+        I am interested in software development, cybersecurity, networking, digital forensics,
+        and emerging technologies. I am actively seeking internship opportunities where I can apply
+        my academic knowledge, improve my technical skills, and gain real-world professional experience.
     </p>
 </section>
 
 <section>
     <h2>Projects</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Smart Curtains - IoT</h3>
+            <p>Spring 2025</p>
+            <p>Designed an IoT-based smart curtain concept using sensors and automation ideas.</p>
+        </div>
 
-    <ul>
-        <li>Smart Curtains - IoT (Spring 2025)</li>
+        <div class="card">
+            <h3>National Bank National Network</h3>
+            <p>Spring 2026</p>
+            <p>Created an enterprise network design with logical planning, security, and documentation.</p>
+        </div>
 
-        <li>National Bank National Network - Enterprise Network Design (Spring 2026)</li>
-
-        <li>Digital Forensics Lab Projects (Fall 2025)</li>
-    </ul>
+        <div class="card">
+            <h3>Digital Forensics Lab Projects</h3>
+            <p>Fall 2025</p>
+            <p>Worked on forensic investigation tasks using tools and lab-based analysis methods.</p>
+        </div>
+    </div>
 </section>
 
 <section>
     <h2>Research Papers</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Phishing Attacks</h3>
+            <p>Computer Security - Fall 2025</p>
+        </div>
 
-    <ul>
-        <li>Phishing Attacks - Computer Security (Fall 2025)</li>
+        <div class="card">
+            <h3>Classification for Medical Diagnosis</h3>
+            <p>Artificial Intelligence - Spring 2026</p>
+        </div>
 
-        <li>Classification for Medical Diagnosis - Artificial Intelligence (Spring 2026)</li>
+        <div class="card">
+            <h3>WPA3 Security Protocol</h3>
+            <p>Wireless Networks - Spring 2026</p>
+        </div>
 
-        <li>WPA3 - Wireless Networks (Spring 2026)</li>
+        <div class="card">
+            <h3>National Bank National Network</h3>
+            <p>Enterprise Network Design - Spring 2026</p>
+        </div>
+    </div>
+</section>
 
-        <li>National Bank National Network - Enterprise Network Design (Spring 2026)</li>
-    </ul>
+<section>
+    <h2>Certifications</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Ethical Hacking</h3>
+            <p>Certification / Training</p>
+        </div>
+
+        <div class="card">
+            <h3>C++</h3>
+            <p>Programming Certification</p>
+        </div>
+
+        <div class="card">
+            <h3>Full Stack Development</h3>
+            <p>Web Development Certification</p>
+        </div>
+    </div>
 </section>
 
 <section>
     <h2>Tools & Technologies</h2>
-
-    <ul>
-        <li>Linux</li>
-
-        <li>Microsoft Office</li>
-
-        <li>Windows Network Administration</li>
-
-        <li>Autopsy - Digital Forensics Tool</li>
-
-        <li>VirtualBox</li>
-
-        <li>GitHub</li>
-
-        <li>Course-related Networking and Cybersecurity Tools</li>
-    </ul>
+    <span class="tag">Linux</span>
+    <span class="tag">Microsoft Office</span>
+    <span class="tag">Windows Network Administration</span>
+    <span class="tag">Autopsy</span>
+    <span class="tag">Tinkercad</span>
+    <span class="tag">Visual Studio</span>
+    <span class="tag">Cisco Packet Tracer</span>
+    <span class="tag">MATLAB</span>
+    <span class="tag">VirtualBox</span>
+    <span class="tag">GitHub</span>
+    <span class="tag">Cybersecurity Tools</span>
+    <span class="tag">Networking Tools</span>
 </section>
 
 <section>
     <h2>Languages</h2>
-
     <ul>
         <li>English - Proficient</li>
-
         <li>Telugu - Native</li>
-
         <li>Hindi - Native</li>
-
-        <li>Spanish - Intermediate Beginner</li>
+        <li>Spanish - More than Beginner</li>
     </ul>
 </section>
 
 <section>
     <h2>Contact</h2>
-
     <p>Email: aqibshaik111@gmail.com</p>
-
     <p>GitHub: github.com/aqibshaik111-afk</p>
 </section>
 
+</div>
+
 <footer>
-    <p>© 2026 Aqib Shaik Portfolio</p>
+    <p>© 2026 Aqib Shaik| Portfolio Website</p>
 </footer>
 
 </body>
